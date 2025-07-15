@@ -1,0 +1,107 @@
+:root {
+    --clr-primary: hsl(75, 94%, 57%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-off-black: hsl(0, 0%, 12%);
+    --clr-neutral-grey: hsl(0, 0%, 20%);
+    --clr-neutral-Dark-grey: hsl(0, 0%, 12%);
+    --ff: 'Inter', sans-serif;
+    --fs-body: .875rem;
+    --fs-heading: 1.375rem;
+    --fx-400: 400;
+    --fx-700: 700;
+    --fx-600: 600;
+}
+
+
+
+h1{
+    line-height: 1,1;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+body {
+    font-family: var(--ff);
+    font-weight: var(--fx-400);
+    font-size: var(--fs-body);
+    color: var(--clr-neutral-white);
+    background: black;
+    text-align: center;
+}
+img {
+    display: block;
+    max-width: 100%;
+    color: var(--clr-primary);
+    font-style: italic;
+    margin-inline: auto;
+}
+.user-name {
+    font-size: var(--fs-heading);
+    font-weight: var(--fx-600);
+    margin: 0;
+}
+.user-location{
+    color: var(--clr-primary);
+    font-weight: var(--fx-600);
+}
+.list-item {
+    display: grid;
+    width: 94%;
+    padding: .7rem;
+    border-radius: .3rem;
+    text-align: center;
+    background: var(--clr-neutral-grey);
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    -ms-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+.profile-container {
+    width: 25em;
+    padding: 1.75rem;
+    background: var(--clr-neutral-Dark-grey);
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+.wrapper {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+.social-links * + * {
+    margin-top: 1rem;
+
+}
+.list-item:hover {
+    background: var(--clr-primary);
+    color: var(--clr-neutral-white);
+}
+.profile-image{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
